@@ -14,3 +14,20 @@ knex.migrate
     app.listen(PORT, listener);
   })
   .catch(console.error);
+
+  // try this if not seeding correctly
+  // knex.migrate
+  // .latest()
+  // .then((migrations) => {
+  //     console.log("migrations", migrations);
+  // })
+  // .then(() => {
+  //     return knex.seed.run();
+  // })
+  // .then((seeds) => {
+  //     console.log('seeds', seeds);
+  // })
+  // .then(() => {
+  //     app.listen(PORT, listener);
+  // })
+  // .catch(console.error);
