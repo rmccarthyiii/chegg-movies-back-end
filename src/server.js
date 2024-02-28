@@ -1,4 +1,6 @@
-const { PORT = 10000 } = process.env; // macbook pro m1 might need a different port, eg: 3002
+// macbook pro m1 might need a different port, eg: 3002
+// trying PORT = 10000 for Render
+const { PORT = 5001 } = process.env;  
 
 const app = require("./app");
 const knex = require("./db/connection");
